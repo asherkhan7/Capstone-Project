@@ -4,7 +4,7 @@ Datasets were taken from Kaggle
 
 ## Business Case
 
-I will use different Countvectorizer and TF-IDF to predict how many views a YouTube video will render based on the tags used.
+I will use different machine learning methods to predict how many views a YouTube video will render based on the tags used.
 
 ## Datasets
 
