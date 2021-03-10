@@ -43,24 +43,41 @@ After I fit transformed the data, I used Random Forest Regression to visualize t
 
 ## Conclusions
 
-Following are the Random Forest results from the two processing methods:
+Following are the Random Forest results from the two NLP methods. There was not much of a difference in the results of the two methods, CountVectorizer had a slightly better r-squared and about 5,000 views better for the mean squared error. An r-squared of .344 is pretty decent considering a text analysis. I also optimized using GridSearch, however the results didn't improve so I decided to go with the CountVectorizer results. 
 
 ### CountVectorization-
 
 Train:
-R Squared =  0.34
+R Squared =  0.344
 Mean Sqrd Error =  188782.54
 
 Test:
-R Squared =  0.18
+R Squared =  0.182
 Mean Sqrd Error =  212470.83
 
 ### TF-IDF-
 
 Train:
-R Squared =  0.34
+R Squared =  0.341
 Mean Sqrd Error =  189268.34
 
 Test:
-R Squared =  0.17
+R Squared =  0.173
 Mean Sqrd Error =  213632.30
+
+Below is the feature importance for both NLP models:
+
+### CountVectorization-
+![bar-graph](/figures/feature_imp_countvec.png)
+
+### TF-IDF-
+![bar-graph](/figures/feature_imp_tfidf.png)
+
+## Limitations
+
+Although tags are a factor in affecting views, it is not the only factor or even the primary one. Other factors that affect the number of views are the Youtube channel itself and its popularity, shares, the time the video was posted, etc.
+
+## Recommendations
+
+The recommended use of this model is to use the top tags (based on feature importance) when posting relevant videos to maximize the number of views.
+
