@@ -79,5 +79,4 @@ Although tags are a factor in affecting views, it is not the only factor or even
 
 ## Recommendations
 
-
-
+The recommended use of this model is to use the top tags (based on feature importance) when posting relevant videos to maximize the number of views.
